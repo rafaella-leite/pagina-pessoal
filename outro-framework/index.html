@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rafaella Leite</title>
+
+    <!-- Bulma -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar custom-navbar" role="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item has-text-weight-semibold" href="#top">
+                    <span class="icon mr-2">
+                        <i class="fa-solid fa-code"></i>
+                    </span>
+
+                    Creative Portfólio
+                </a>
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    id="navbarBurger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="navbarMenu"
+                >
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#sobre">
+                        Sobre
+                    </a>
+                    <a class="navbar-item" href="#habilidades">
+                        Habilidades
+                    </a>
+                    <a class="navbar-item" href="#projetos">
+                        Projetos
+                    </a>
+                    <a class="navbar-item" href="#interesses">
+                        Interesses
+                    </a>
+                    <a class="navbar-item" href="#contato">
+                        Contato
+                    </a>
+                    <div class="navbar-item">
+                        <span class="theme-label">
+                            Tema
+                        </span>
+                    <button
+                        id="themeToggle"
+                        class="button is-small"
+                        type="button"
+                        aria-label="Alterar tema"
+                    >
+                        <span class="icon">
+                            <i class="fa-solid fa-moon"></i>
+                        </span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="top" class="section">
+        <div class="container">
+            <div class="columns is-vcentered is-variable is-6">
+                <!-- FOTO -->
+                <div class="column is-4 has-text-centered">
+                    <img
+                        class="profile-img"
+                        src="assets/img/foto.png"
+                        alt="Foto de perfil"
+                    >
+                    <div class="tags is-centered mt-4">
+                        <span class="tag is-link">
+                            Sistemas de Informação
+                        </span>
+                        <span class="tag is-dark">
+                            UFLA
+                        </span>
+                    </div>
+                </div>
+
+                <!-- INFORMAÇÕES -->
+                <div class="column is-8">
+                    <h1 class="title is-2">
+                        Olá! Eu sou
+                        <span class="has-text-link">
+                            Rafaella Leite
+                        </span>
+                    </h1>
+                    <p class="subtitle has-text-grey">
+                        Estudante do curso de Sistemas de Informação e designer
+                        com olhar voltado para estética, conceito e construção
+                        de experiências visuais autênticas.
+                    </p>
+
+                    <!-- BOTÕES -->
+                    <div class="buttons">
+                        <a class="button is-link" href="#projetos">
+                            <span class="icon">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </span>
+                            <span>Ver projetos</span>
+                        </a>
+                        <a class="button is-link is-outlined" href="#contato">
+                            <span class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <span>Contato</span>
+                        </a>
+                        <a
+    class="button social-button"
+    href="https://github.com/rafaella-leite"
+    target="_blank"
+>
+    <span class="icon">
+        <i class="fa-brands fa-github"></i>
+    </span>
+    <span>GitHub</span>
+</a>
+
+<a
+    class="button social-button"
+    href="https://www.linkedin.com/in/rafaella-maciel-025253189/"
+    target="_blank"
+>
+    <span class="icon">
+        <i class="fa-brands fa-linkedin"></i>
+    </span>
+    <span>LinkedIn</span>
+</a>
+                    </div>
+
+                    <hr>
+
+                    <!-- CARDS CURSO E OBJETIVO -->
+                    <div class="columns">
+                        <div class="column">
+                            <div class="box info-box">
+                                <div class="is-flex is-align-items-center mb-2">
+                                    <span class="icon has-text-link mr-2">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                    </span>
+                                    <strong>Curso</strong>
+                                </div>
+                                <p class="has-text-grey">
+                                    Bacharelado em Sistemas de Informação -
+                                    Universidade Federal de Lavras (UFLA).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="box info-box">
+                                <div class="is-flex is-align-items-center mb-2">
+                                    <span class="icon has-text-link mr-2">
+                                        <i class="fa-solid fa-bullseye"></i>
+                                    </span>
+                                    <strong>Objetivo</strong>
+                                </div>
+                                <p class="has-text-grey">
+                                    Aprimorar habilidades em web
+                                    (frontend e backend) e participar
+                                    de projetos práticos no semestre.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title is-4 mb-1">
+                    Sobre
+                </h2>
+
+                <p class="has-text-grey">
+                    Uma breve descrição do estudante e trajetória.
+                </p>
+            </div>
+            <div class="columns mt-3">
+                <div class="column is-7">
+                    <div class="card custom-card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p>
+                                    Sou designer com olhar voltado para estética,
+                                    conceito e construção de experiências visuais
+                                    autênticas. Há mais de 5 anos atuando na área
+                                    criativa, desenvolvo projetos que unem identidade,
+                                    estratégia e direção criativa, explorando
+                                    composições modernas, detalhes visuais e narrativas
+                                    que fortalecem a conexão entre marca e público.
+                                </p>
+                                <p>
+                                    Graduanda em Sistemas de Informação, trago uma
+                                    visão que conecta criatividade e tecnologia,
+                                    permitindo desenvolver soluções visuais de forma
+                                    mais estratégica, funcional e contemporânea.
+                                    Tenho grande interesse por design digital,
+                                    branding e comunicação visual.
+                                </p>
+                                <p class="has-text-grey">
+                                    Nesta página, apresento minhas habilidades,
+                                    interesses e projetos desenvolvidos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5">
+                    <div class="card custom-card">
+                        <div class="card-content">
+                            <h3 class="title is-6">
+                                Informações rápidas
+                            </h3>
+
+                            <div class="quick-info">
+                                <p>
+                                    <span class="icon has-text-link">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </span>
+                                    <strong>Cidade:</strong>
+                                    Lavras/MG
+                                </p>
+                                <p>
+                                    <span class="icon has-text-link">
+                                        <i class="fa-solid fa-language"></i>
+                                    </span>
+                                    <strong>Idiomas:</strong>
+                                    Português, Inglês, Francês
+                                </p>
+                                <p>
+                                    <span class="icon has-text-link">
+                                        <i class="fa-solid fa-laptop-code"></i>
+                                    </span>
+                                    <strong>Área:</strong>
+                                    Desenvolvimento Web / Design Gráfico
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title is-4 mb-1">
+                    Habilidades
+                </h2>
+                <p class="has-text-grey">
+                    Tecnologias e competências.
+                </p>
+            </div>
+
+            <div class="columns mt-3">
+                <!-- TECNOLOGIAS -->
+                <div class="column">
+                    <div class="card custom-card full-height">
+                        <div class="card-content">
+                            <h3 class="title is-6">
+                                Tecnologias
+                            </h3>
+
+                            <div class="tags">
+                                <span class="tag is-link is-rounded">HTML</span>
+                                <span class="tag is-link is-rounded">CSS</span>
+                                <span class="tag is-link is-rounded">JavaScript</span>
+                                <span class="tag is-dark is-rounded">Bulma</span>
+                                <span class="tag is-dark is-rounded">Git/GitHub</span>
+                                <span class="tag is-dark is-rounded">Figma</span>
+                                <span class="tag is-dark is-rounded">Photoshop</span>
+                                <span class="tag is-dark is-rounded">Illustrator</span>
+                                <span class="tag is-dark is-rounded">After Effects</span>
+                            </div>
+
+                            <hr>
+
+                            <h3 class="title is-6">
+                                Competências
+                            </h3>
+
+                            <div class="content">
+                                <ul>
+                                    <li>Desenvolvimento Web Front-end</li>
+                                    <li>
+                                        Construção de páginas responsivas
+                                    </li>
+                                    <li>
+                                        HTML, CSS e JavaScript
+                                    </li>
+                                    <li>
+                                        Manipulação do DOM e eventos
+                                    </li>
+                                    <li>
+                                        UI/UX aplicado ao desenvolvimento web
+                                    </li>
+                                    <li>
+                                        Acessibilidade em interfaces digitais
+                                    </li>
+                                    <li>
+                                        WordPress e Elementor
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NÍVEL -->
+                <div class="column">
+                    <div class="card custom-card full-height">
+                        <div class="card-content">
+                            <h3 class="title is-6">
+                                Nível de familiaridade
+                            </h3>
+
+                            <!-- HTML -->
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>HTML</span>
+                                    <span class="has-text-grey is-size-7">
+                                        Intermediário
+                                    </span>
+                                </div>
+                                <progress
+                                    class="progress is-link"
+                                    value="80"
+                                    max="100">
+                                    80%
+                                </progress>
+                            </div>
+
+                            <!-- CSS -->
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>CSS</span>
+                                    <span class="has-text-grey is-size-7">
+                                        Básico-Intermediário
+                                    </span>
+                                </div>
+                                <progress
+                                    class="progress is-link"
+                                    value="55"
+                                    max="100">
+                                    55%
+                                </progress>
+                            </div>
+
+                            <!-- JS -->
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>JavaScript</span>
+                                    <span class="has-text-grey is-size-7">
+                                        Intermediário
+                                    </span>
+                                </div>
+                                <progress
+                                    class="progress is-link"
+                                    value="40"
+                                    max="100">
+                                    40%
+                                </progress>
+                            </div>
+
+                            <!-- FIGMA -->
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Figma</span>
+                                    <span class="has-text-grey is-size-7">
+                                        Avançado
+                                    </span>
+                                </div>
+                                <progress
+                                    class="progress is-link"
+                                    value="100"
+                                    max="100">
+                                    100%
+                                </progress>
+                            </div>
+
+                            <!-- PHOTOSHOP -->
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Photoshop</span>
+                                    <span class="has-text-grey is-size-7">
+                                        Avançado
+                                    </span>
+                                </div>
+                                <progress
+                                    class="progress is-link"
+                                    value="90"
+                                    max="100">
+                                    90%
+                                </progress>
+                            </div>
+
+                            <!-- ILLUSTRATOR -->
+                            <div class="skill">
+                                <div class="skill-header">
+                                    <span>Illustrator</span>
+                                    <span class="has-text-grey is-size-7">
+                                        Intermediário
+                                    </span>
+                                </div>
+                                <progress
+                                    class="progress is-link"
+                                    value="70"
+                                    max="100">
+                                    70%
+                                </progress>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title is-4 mb-1">
+                    Projetos
+                </h2>
+                <p class="has-text-grey">
+                    Alguns trabalhos já desenvolvidos.
+                </p>
+            </div>
+            <div class="columns is-multiline mt-3">
+                <!-- JOGO DA VELHA -->
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card custom-card project-card">
+                        <div class="card-content">
+                            <div class="project-header">
+                                <h3 class="title is-6 mb-0">
+                                    Jogo da Velha
+                                </h3>
+                                <div class="tags are-small">
+                                    <span class="tag is-dark">HTML</span>
+                                    <span class="tag is-dark">CSS</span>
+                                    <span class="tag is-dark">JavaScript</span>
+                                </div>
+                            </div>
+                            <p class="has-text-grey is-size-7 mt-3">
+                                Implementação do jogo com verificação de vitória e reinício.
+                            </p>
+                            <div class="content is-size-7">
+                                <ul>
+                                    <li>Matriz</li>
+                                    <li>Manipulação do DOM</li>
+                                    <li>Animação de personagens</li>
+                                </ul>
+                            </div>
+                            <div class="buttons mt-auto">
+                                <a class="button is-small is-link is-outlined">
+                                    <span class="icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </span>
+                                    <span>Repositório</span>
+                                </a>
+                                <a class="button is-small is-link">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PÁGINA PESSOAL -->
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card custom-card project-card">
+                        <div class="card-content">
+                            <div class="project-header">
+                                <h3 class="title is-6 mb-0">
+                                    Página Pessoal
+                                </h3>
+                                <div class="tags are-small">
+                                    <span class="tag is-dark">HTML</span>
+                                    <span class="tag is-dark">Bulma</span>
+                                    <span class="tag is-dark">FontAwesome</span>
+                                </div>
+                            </div>
+                            <p class="has-text-grey is-size-7 mt-3">
+                                Implementação de página pessoal com seções e navegação.
+                            </p>
+                            <div class="content is-size-7">
+                                <ul>
+                                    <li>
+                                        Classes do Bulma
+                                    </li>
+                                    <li>
+                                        Sistema de Columns
+                                    </li>
+                                    <li>
+                                        Componentes, cards e navbar
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="buttons">
+                                <a class="button is-small is-link is-outlined">
+                                    <span class="icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </span>
+                                    <span>Repositório</span>
+                                </a>
+                                <a class="button is-small is-link">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JOGO DA MEMÓRIA -->
+                <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                    <div class="card custom-card project-card">
+                        <div class="card-content">
+                            <div class="project-header">
+                                <h3 class="title is-6 mb-0">
+                                    Jogo da Memória
+                                </h3>
+                                <div class="tags are-small">
+                                    <span class="tag is-dark">HTML</span>
+                                    <span class="tag is-dark">CSS</span>
+                                    <span class="tag is-dark">JavaScript</span>
+                                </div>
+                            </div>
+                            <p class="has-text-grey is-size-7 mt-3">
+                                Jogo interativo de memória com sistema de
+                                combinação de cartas e reinício da partida.
+                            </p>
+                            <div class="content is-size-7">
+                                <ul>
+                                    <li>
+                                        Manipulação do DOM
+                                    </li>
+                                    <li>
+                                        Algoritmo de embaralhamento
+                                    </li>
+                                    <li>
+                                        Controle de estados das cartas
+                                    </li>
+                                    <li>
+                                        Interface responsiva
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="buttons">
+                                <a class="button is-small is-link is-outlined">
+                                    <span class="icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </span>
+                                    <span>Repositório</span>
+                                </a>
+                                <a class="button is-small is-link">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </span>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESSES -->
+    <section id="interesses" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title is-4 mb-1">
+                    Interesses
+                </h2>
+                <p class="has-text-grey">
+                    Áreas que eu gosto de estudar/pesquisar.
+                </p>
+            </div>
+            <div class="columns mt-3">
+                <div class="column">
+                    <div class="card custom-card full-height">
+                        <div class="card-content">
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        Desenvolvimento Web
+                                        (frontend e backend)
+                                    </li>
+                                    <li>
+                                        UI/UX e experiência do usuário
+                                    </li>
+                                    <li>
+                                        Design Gráfico e Identidade Visual
+                                    </li>
+                                    <li>
+                                        Desenvolvimento Web e interfaces digitais
+                                    </li>
+                                    <li>
+                                        Dados e visualização
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ATIVIDADES -->
+                <div class="column">
+                    <div class="card custom-card full-height">
+                        <div class="card-content">
+                            <h3 class="title is-6">
+                                Atividades
+                            </h3>
+                            <p class="has-text-grey mb-3">
+                                Aprendo na prática, transformando ideias em
+                                projetos e explorando novas tecnologias.
+                            </p>
+                            <div class="tags">
+                                <span class="tag activity-tag">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </span>
+                                    <span>Estudos</span>
+                                </span>
+                                <span class="tag activity-tag">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-people-group"></i>
+                                    </span>
+                                    <span>Trabalho em equipe</span>
+                                </span>
+                                <span class="tag activity-tag">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-terminal"></i>
+                                    </span>
+                                    <span>Projetos práticos</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="title is-4 mb-1">
+                    Contato
+                </h2>
+                <p class="has-text-grey">
+                    Como falar comigo.
+                </p>
+            </div>
+            <div class="columns mt-3">
+                <div class="column">
+                    <div class="card custom-card">
+                        <div class="card-content contact-list">
+                            <p>
+                                <span class="icon has-text-link">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                rafaelladesigner.25@gmail.com
+                            </p>
+                            <p>
+                                <span class="icon has-text-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </span>
+                                <a
+                                    href="https://github.com/rafaella-leite"
+                                    target="_blank"
+                                >
+                                    github.com/rafaella-leite
+                                </a>
+                            </p>
+                            <p>
+                                <span class="icon has-text-link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </span>
+                                <a
+                                    href="https://www.linkedin.com/"
+                                    target="_blank"
+                                >
+                                    linkedin.com/in/rafaella-maciel
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card custom-card">
+                        <div class="card-content contact-list">
+                            <p>
+                                <span class="icon has-text-link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                                <a
+                                    href="https://instagram.com/forella.design"
+                                    target="_blank"
+                                >
+                                    instagram.com/forella.design
+                                </a>
+                            </p>
+                            <p>
+                                <span class="icon has-text-link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                                <a
+                                    href="https://facebook.com/"
+                                    target="_blank"
+                                >
+                                    facebook.com/rafaella-maciel
+                                </a>
+                            </p>
+                            <p>
+                                <span class="icon has-text-link">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                                <a
+                                    href="https://youtube.com/"
+                                    target="_blank"
+                                >
+                                    youtube.com/rafaella-maciel
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer custom-footer">
+        <div class="container">
+            <div class="footer-content">
+                <small>
+                    © <span id="year"></span>
+                    Página Pessoal | Rafaella Leite
+                </small>
+                <small>
+                    Feito com HTML + Bulma + CSS/JS
+                </small>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

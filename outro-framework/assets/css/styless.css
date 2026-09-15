@@ -1,0 +1,651 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* =========================
+   TEMA CLARO
+========================= */
+
+html[data-theme="light"] {
+    --page-bg: #ffffff;
+    --card-bg: #ffffff;
+    --secondary-bg: #f8f9fa;
+
+    --text-color: #212529;
+    --secondary-text: #6c757d;
+
+    --border-color: #dee2e6;
+}
+
+
+/* =========================
+   TEMA ESCURO
+========================= */
+
+html[data-theme="dark"] {
+    --page-bg: #212529;
+    --card-bg: #272b30;
+    --secondary-bg: #2b3035;
+
+    --text-color: #f8f9fa;
+    --secondary-text: #adb5bd;
+
+    --border-color: #495057;
+}
+
+
+/* =========================
+   APLICAÇÃO DO TEMA
+========================= */
+
+body {
+    background-color: var(--page-bg);
+    color: var(--text-color);
+}
+
+
+html[data-theme="dark"] .title,
+html[data-theme="dark"] strong,
+html[data-theme="dark"] .content,
+html[data-theme="dark"] li,
+html[data-theme="dark"] .navbar-item,
+html[data-theme="dark"] .navbar-burger,
+html[data-theme="dark"] .card-content {
+    color: var(--text-color);
+}
+
+
+html[data-theme="dark"] .has-text-grey {
+    color: var(--secondary-text) !important;
+}
+
+
+html[data-theme="dark"] hr {
+    background-color: var(--border-color);
+}
+
+
+/* =========================
+   FOTO DE PERFIL
+========================= */
+
+.profile-img {
+    width: 270px;
+    height: 270px;
+
+    object-fit: cover;
+
+    border-radius: 999px;
+
+    border: 4px solid rgba(255, 255, 255, 0.7);
+
+    box-shadow:
+        0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar {
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    border-bottom: 1px solid var(--border-color);
+
+    background-color: var(--page-bg);
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.navbar-item {
+    color: var(--text-color) !important;
+}
+
+
+.navbar-item:hover {
+    background-color: var(--secondary-bg) !important;
+    color: var(--text-color) !important;
+}
+
+
+.theme-label {
+    font-size: 0.875rem;
+
+    color: var(--secondary-text);
+
+    margin-right: 10px;
+}
+
+
+/* =========================
+   BOTÃO DE TEMA
+========================= */
+
+button#themeToggle.button {
+    width: 38px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    background-color: transparent !important;
+
+    border: 1px solid var(--border-color) !important;
+
+    color: var(--text-color) !important;
+
+    cursor: pointer;
+
+    box-shadow: none !important;
+}
+
+
+button#themeToggle.button .icon,
+button#themeToggle.button .icon i {
+    color: var(--text-color) !important;
+}
+
+
+html[data-theme="light"] button#themeToggle.button {
+    background-color: #ffffff !important;
+
+    border-color: #6c757d !important;
+
+    color: #212529 !important;
+}
+
+
+html[data-theme="light"] button#themeToggle.button .icon,
+html[data-theme="light"] button#themeToggle.button i {
+    color: #212529 !important;
+}
+
+
+
+html[data-theme="dark"] button#themeToggle.button {
+    background-color: #272b30 !important;
+
+    border-color: #adb5bd !important;
+
+    color: #ffffff !important;
+}
+
+
+html[data-theme="dark"] button#themeToggle.button .icon,
+html[data-theme="dark"] button#themeToggle.button i {
+    color: #ffffff !important;
+}
+
+
+button#themeToggle.button:hover {
+    background-color: var(--secondary-bg) !important;
+}
+
+
+button#themeToggle.button:focus,
+button#themeToggle.button:active {
+    color: var(--text-color) !important;
+
+    box-shadow: none !important;
+}
+
+
+html[data-theme="light"] .button.is-outlined {
+    background-color: transparent !important;
+
+    color: #363636 !important;
+
+    border-color: #b5b5b5 !important;
+}
+
+
+html[data-theme="light"] .button.is-outlined .icon,
+html[data-theme="light"] .button.is-outlined i {
+    color: inherit !important;
+}
+
+
+html[data-theme="light"] .button.is-outlined:hover {
+    background-color: #f5f5f5 !important;
+
+    color: #212529 !important;
+
+    border-color: #7a7a7a !important;
+}
+
+
+html[data-theme="dark"] .button.is-outlined {
+    background-color: transparent !important;
+
+    color: #f8f9fa !important;
+
+    border-color: #adb5bd !important;
+}
+
+
+html[data-theme="dark"] .button.is-outlined .icon,
+html[data-theme="dark"] .button.is-outlined i {
+    color: inherit !important;
+}
+
+
+html[data-theme="dark"] .button.is-outlined:hover {
+    background-color: #f8f9fa !important;
+
+    color: #212529 !important;
+
+    border-color: #f8f9fa !important;
+}
+
+
+html[data-theme="light"] .button.is-link.is-outlined {
+    background-color: transparent !important;
+
+    color: #485fc7 !important;
+
+    border-color: #485fc7 !important;
+}
+
+
+html[data-theme="light"] .button.is-link.is-outlined .icon,
+html[data-theme="light"] .button.is-link.is-outlined i {
+    color: #485fc7 !important;
+}
+
+
+html[data-theme="light"] .button.is-link.is-outlined:hover {
+    background-color: #485fc7 !important;
+
+    color: #ffffff !important;
+
+    border-color: #485fc7 !important;
+}
+
+
+html[data-theme="light"] .button.is-link.is-outlined:hover .icon,
+html[data-theme="light"] .button.is-link.is-outlined:hover i {
+    color: #ffffff !important;
+}
+
+
+html[data-theme="dark"] .button.is-link.is-outlined {
+    background-color: transparent !important;
+
+    color: #8c9eff !important;
+
+    border-color: #8c9eff !important;
+}
+
+
+html[data-theme="dark"] .button.is-link.is-outlined .icon,
+html[data-theme="dark"] .button.is-link.is-outlined i {
+    color: #8c9eff !important;
+}
+
+
+html[data-theme="dark"] .button.is-link.is-outlined:hover {
+    background-color: #485fc7 !important;
+
+    color: #ffffff !important;
+
+    border-color: #485fc7 !important;
+}
+
+
+html[data-theme="dark"] .button.is-link.is-outlined:hover .icon,
+html[data-theme="dark"] .button.is-link.is-outlined:hover i {
+    color: #ffffff !important;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.custom-card {
+    height: 100%;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+
+    background-color: var(--card-bg);
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.info-box {
+    height: 100%;
+
+    background-color: var(--secondary-bg);
+
+    border: 1px solid var(--border-color);
+
+    box-shadow: none;
+}
+
+
+.full-height {
+    height: 100%;
+}
+
+
+/* =========================
+   PROJETOS
+========================= */
+
+.project-card {
+    height: 100%;
+}
+
+
+.project-card .card-content {
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.project-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.project-header .tags {
+    justify-content: flex-end;
+
+    flex-wrap: nowrap;
+
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill {
+    margin-bottom: 20px;
+}
+
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+
+.skill-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 6px;
+}
+
+
+.progress {
+    height: 16px;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.quick-info p {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 14px;
+}
+
+
+.quick-info p:last-child {
+    margin-bottom: 0;
+}
+
+
+.contact-list p {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 14px;
+}
+
+
+.contact-list p:last-child {
+    margin-bottom: 0;
+}
+
+
+.contact-list a {
+    color: #0d6efd;
+
+    text-decoration: none;
+}
+
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+
+/* Links no tema escuro */
+
+html[data-theme="dark"] .contact-list a {
+    color: #8c9eff;
+}
+
+
+/* =========================
+   BADGES / TAGS
+========================= */
+
+.activity-tag {
+    background-color: var(--secondary-bg) !important;
+
+    color: var(--text-color) !important;
+
+    border: 1px solid var(--border-color);
+}
+
+
+.activity-tag .icon,
+.activity-tag i {
+    color: var(--text-color) !important;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.custom-footer {
+    padding: 25px 24px;
+
+    border-top: 1px solid var(--border-color);
+
+    background-color: var(--page-bg);
+}
+
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    color: var(--secondary-text);
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media screen and (max-width: 1023px) {
+
+    .navbar-menu {
+        background-color: var(--page-bg);
+
+        border-top: 1px solid var(--border-color);
+    }
+
+
+    .theme-label {
+        display: none;
+    }
+
+
+    .project-header {
+        flex-direction: column;
+    }
+
+
+    .project-header .tags {
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .profile-img {
+        width: 220px;
+
+        height: 220px;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+.social-button,
+.social-button:link,
+.social-button:visited {
+    background-color: transparent !important;
+    border: 1px solid #b5b5b5 !important;
+
+    color: #363636 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.social-button span,
+.social-button .icon,
+.social-button i {
+    color: #363636 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Hover */
+
+.social-button:hover {
+    background-color: #f5f5f5 !important;
+    border-color: #363636 !important;
+
+    color: #212529 !important;
+}
+
+.social-button:hover span,
+.social-button:hover i {
+    color: #212529 !important;
+}
+
+
+/* Tema escuro */
+
+html[data-theme="dark"] .social-button,
+html[data-theme="dark"] .social-button:link,
+html[data-theme="dark"] .social-button:visited {
+    background-color: transparent !important;
+    border-color: #adb5bd !important;
+
+    color: #f8f9fa !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html[data-theme="dark"] .social-button span,
+html[data-theme="dark"] .social-button .icon,
+html[data-theme="dark"] .social-button i {
+    color: #f8f9fa !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* Hover no tema escuro */
+
+html[data-theme="dark"] .social-button:hover {
+    background-color: #f8f9fa !important;
+
+    color: #212529 !important;
+}
+
+html[data-theme="dark"] .social-button:hover span,
+html[data-theme="dark"] .social-button:hover i {
+    color: #212529 !important;
+}
